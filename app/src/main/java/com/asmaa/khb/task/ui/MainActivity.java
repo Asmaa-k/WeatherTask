@@ -66,11 +66,9 @@ public class MainActivity extends AppCompatActivity
     public void updateInf(CurrentArea currentArea) {
 
         if (currentArea == null) {
-            Log.d(TAG, "updateInf: nulllll");
             return;
         }
 
-        Log.d(TAG, "updateInf: stubbbbbid");
         mWeather.add(currentArea.getId(), currentArea);
         adapter.notifyItemChanged(currentArea.getId());
 
